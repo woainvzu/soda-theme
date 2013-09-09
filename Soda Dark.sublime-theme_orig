@@ -19,11 +19,6 @@
     },
     {
         "class": "tabset_control",
-        "settings": ["enable_tab_scrolling"],
-        "content_margin": [3, 0, 3, 3]
-    },
-    {
-        "class": "tabset_control",
         "settings": ["mouse_wheel_switches_tabs"],
         "mouse_wheel_switch": true
     },
@@ -74,11 +69,6 @@
         "content_margin": [3, 4, 3, 3],
         "tab_overlap": 24,
         "tab_height": 28
-    },
-    {
-        "class": "tabset_control",
-        "settings": ["soda_classic_tabs", "enable_tab_scrolling"],
-        "content_margin": [6, 4, 6, 3]
     },
     // Tab element
     {
@@ -203,76 +193,21 @@
     {
         "class": "tab_label",
         "fade": true,
-        // "fg": [170, 170, 170],
-        "fg": [100, 100, 100],
+        "fg": [170, 170, 170],
         "shadow_color": [25, 25, 25],
-        // "shadow_offset": [0, -1]
-        "shadow_offset": [2, 2],
-        "font.face": "Monaco",
-        "font.size": 11
+        "shadow_offset": [0, -1]
     },
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-        // "fg": [200, 200, 200],
-        "fg": [255, 200, 100],
+        "fg": [200, 200, 200],
         "shadow_color": [30, 30, 30]
     },
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        // "fg": [230, 230, 230],
-        "fg": [146, 208, 0],
+        "fg": [230, 230, 230],
         "shadow_color": [35, 35, 35]
-    },
-    {
-        "class": "tab_label",
-        "attributes": ["transient"],
-        "font.italic": true
-    },
-
-//
-// TAB SCROLLING
-//
-
-    // Tab dropdown
-    {
-        "class": "show_tabs_dropdown_button",
-        "content_margin": [9, 7, 8, 6],
-        "layer0.texture": "Theme - Soda/Soda Dark/tabset-list.png",
-        "layer0.opacity": 1.0,
-        "layer0.inner_margin": 0
-    },
-    {
-        "class": "show_tabs_dropdown_button",
-        "attributes": ["hover"],
-        "layer0.texture": "Theme - Soda/Soda Dark/tabset-list-hover.png"
-    },
-    // Tab scroll left
-    {
-        "class": "scroll_tabs_left_button",
-        "content_margin": [9, 7, 8, 6],
-        "layer0.texture": "Theme - Soda/Soda Dark/tabset-left.png",
-        "layer0.opacity": 1.0,
-        "layer0.inner_margin": 0
-    },
-    {
-        "class": "scroll_tabs_left_button",
-        "attributes": ["hover"],
-        "layer0.texture": "Theme - Soda/Soda Dark/tabset-left-hover.png"
-    },
-    // Tab scroll right
-    {
-        "class": "scroll_tabs_right_button",
-        "content_margin": [9, 7, 8, 6],
-        "layer0.texture": "Theme - Soda/Soda Dark/tabset-right.png",
-        "layer0.opacity": 1.0,
-        "layer0.inner_margin": 0
-    },
-    {
-        "class": "scroll_tabs_right_button",
-        "attributes": ["hover"],
-        "layer0.texture": "Theme - Soda/Soda Dark/tabset-right-hover.png"
     },
 
 //
@@ -440,47 +375,7 @@
 
     {
         "class": "minimap_control",
-        "settings": ["always_show_minimap_viewport"],
-        "viewport_color": [255, 255, 255, 35],
-        "viewport_opacity": 1.0
-    },
-    {
-        "class": "minimap_control",
-        "settings": ["!always_show_minimap_viewport"],
-        "viewport_color": [255, 255, 255, 35],
-        "viewport_opacity": { "target": 0.0, "speed": 10.0, "interpolation": "smoothstep" }
-    },
-    {
-        "class": "minimap_control",
-        "attributes": ["hover"],
-        "settings": ["!always_show_minimap_viewport"],
-        "viewport_opacity": 1.0
-    },
-
-//
-// DIALOG
-//
-
-    {
-        "class": "dialog",
-        "layer0.tint": [67, 67, 67],
-        "layer0.opacity": 1.0
-    },
-
-//
-// PROGRESS BAR
-//
-
-    {
-        "class": "progress_bar_control",
-        "layer0.tint": [30, 30, 30],
-        "layer0.opacity": 1.0
-    },
-    {
-        "class": "progress_gauge_control",
-        "layer0.tint": [144, 144, 144],
-        "layer0.opacity": 1.0,
-        "content_margin": [0, 6]
+        "viewport_color": [255, 255, 255, 35]
     },
 
 //
@@ -490,9 +385,7 @@
     // General labels
     {
         "class": "label_control",
-        "color": [130, 130, 130],
-        "font.face": "Monaco",
-        "font.size": 13
+        "color": [204, 204, 204]
     },
     // Text field labels
     {
@@ -590,47 +483,34 @@
     // Sidebar heading
     {
         "class": "sidebar_heading",
-        "color": [100, 100, 100],
-        "font.size": 14,
-        "font.face": "Ubuntu",
+        "color": [210, 210, 210],
         "font.bold": true,
-        "shadow_color": [25, 25, 25],
         "shadow_color": [0, 0, 0],
-        "shadow_offset": [2, 1]
+        "shadow_offset": [0, -1]
     },
     // Sidebar heading selected
     {
         "class": "sidebar_heading",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "shadow_offset": [2, 2]
+        "shadow_offset": [0, 1]
     },
     // Sidebar entry
-    // The filename which is in the idle statu
     {
         "class": "sidebar_label",
-        "color": [38, 38, 188],
-        // "color": [125, 125, 125],
+        "color": [125, 125, 125],
         "shadow_color": [0, 0, 0],
-        "shadow_offset": [1, 2]
-        "font.bold": false,
-        "font.italic": false
+        "shadow_offset": [0, -1]
     },
     // Sidebar folder entry
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        // "color": [190, 190, 190],
-        "color": [120, 140, 80],
-        "font.face": "Consolas",
-        "font.size": 13
+        "color": [190, 190, 190]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
-        // "color": [200, 100, 0],
-        "color": [120, 150, 120],
-        "font.face": "Consolas",
-        "font.size": 13
+        "color": [235, 235, 235]
     },
     {
         "class": "sidebar_label",
@@ -642,25 +522,9 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        // "color": [10, 10, 10],
-        "color": [200, 100, 0],
+        "color": [210, 210, 210],
         "shadow_color": [0, 0, 0],
-        "shadow_offset": [2, 1]
-    },
-    {
-        "class": "sidebar_label",
-        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        // "color": [10, 10, 10],
-        // "color": [120, 150, 120],
-        "color": [200, 100, 0],
-        "shadow_color": [0, 0, 0],
-        "shadow_offset": [1, 1]
-    },
-    // Sidebar entry transient
-    {
-        "class": "sidebar_label",
-        "attributes": ["transient"],
-        "font.italic": true
+        "shadow_offset": [0, 1]
     },
 
 //
@@ -821,21 +685,7 @@
         "layer0.texture": "Theme - Soda/Soda Dark/text-field.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [4, 5, 4, 3],
-        "content_margin": [3, 3, 6, 3]
-    },
-
-    // Text input dropdown
-    {
-        "class": "dropdown_button_control",
-        "content_margin": [8, 8],
-        "layer0.texture": "Theme - Soda/Soda Dark/text-field-list.png",
-        "layer0.opacity": 1.0,
-        "layer0.inner_margin": [4, 4]
-    },
-    {
-        "class": "dropdown_button_control",
-        "attributes": ["hover"],
-        "layer0.texture": "Theme - Soda/Soda Dark/text-field-list-hover.png"
+        "content_margin": [3, 3]
     },
 
 //
@@ -896,37 +746,21 @@
     {
         "class": "quick_panel_label",
         "fg": [210, 210, 210, 255],
-        // Approximate String Matching
-        // "match_fg": [126, 199, 239, 255],
-        // Light Green
-        "match_fg": [166, 226, 46, 255],
-        "bg": [41, 41, 41, 255],
+        "match_fg": [126, 199, 239, 255],
         "selected_fg": [255, 255, 255, 255],
-        // "selected_match_fg": [166, 229, 255, 255],
-        // Orange
-        "selected_match_fg": [253, 151, 31, 255],
-        "selected_bg": [24, 24, 24, 255]
+        "selected_match_fg": [166, 229, 255, 255]
     },
     {
-        // Shortcut Config
         "class": "quick_panel_path_label",
         "fg": [130, 130, 130, 255],
         "match_fg": [220, 220, 220, 255],
-        "bg": [41, 41, 41, 255],
         "selected_fg": [175, 175, 175, 255],
-        "selected_match_fg": [220, 220, 220, 255],
-        "selected_bg": [24, 24, 24, 255]
+        "selected_match_fg": [220, 220, 220, 255]
     },
     {
         "class": "quick_panel_score_label",
-        // "fg": [126, 199, 239, 255],
-        // Light Green
-        "fg": [166, 226, 46, 255],
-        "bg": [41, 41, 41, 255],
-        // "selected_fg": [166, 229, 255, 255],
-        // Orange
-        "selected_fg": [253, 151, 31, 255],
-        "selected_bg": [24, 24, 24, 255]
+        "fg": [126, 199, 239, 255],
+        "selected_fg": [166, 229, 255, 255]
     },
 
 //
@@ -1030,24 +864,6 @@
         "class": "icon_button_control",
         "attributes": ["left", "right", "selected"],
         "layer0.texture": "Theme - Soda/Soda Dark/btn-small-on.png"
-    },
-    // Panel close button
-    {
-        "class": "panel_close_button",
-        "layer0.texture": "Theme - Soda/Soda Dark/panel-close.png",
-        "layer0.opacity": 0.85,
-        "content_margin": [8, 12]
-    },
-    {
-        "class": "panel_close_button",
-        "attributes": ["hover"],
-        "layer0.texture": "Theme - Soda/Soda Dark/panel-close.png",
-        "layer0.opacity": 1.0
-    },
-    {
-        "class": "panel_close_button",
-        "attributes": ["pressed"],
-        "layer0.texture": "Theme - Soda/Soda Dark/panel-close-pressed.png"
     },
 
 //

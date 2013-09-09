@@ -24,7 +24,7 @@
 				<key>lineHighlight</key>
 				<string>#333333</string>
 				<key>selection</key>
-				<string>#666666</string>
+				<string>#222222</string>
 				<key>selectionBorder</key>
 				<string>#66666600</string>
 				<key>inactiveSelection</key>
