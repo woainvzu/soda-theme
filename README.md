@@ -11,7 +11,6 @@ Project site: [http://buymeasoda.github.com/soda-theme/](http://buymeasoda.githu
 ![Soda Dark Theme](http://buymeasoda.github.com/soda-theme/images/screenshots/soda-2-dark-theme.png?v=2)
 
 ![Soda Dark Theme _ Marslo](https://github.com/woainvzu/Sublime2and3_Config_Marslo/blob/master/Screenshot/soda-theme3_win_marslo.png?raw=true)
-![Soda Dark Theme _ Marslo](https://github.com/woainvzu/Sublime2and3_Config_Marslo/blob/master/Screenshot/soda-theme3_win_marslo.png?v=2)
 
 ## Installation
 
